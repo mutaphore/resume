@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\usepackage{marvosym}
+\usepackage{wasysym}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+% \lastupdated % Print the Last Updated text at the top right
+
+\namesection{}{Dewei Chen}{ % Your name
+%\urlstyle{same}\url{https://cs.nyu.edu/~dc3186} \\ % Your website, LinkedIn profile or other web address
+\Letter \space \href{mailto:dewei.chen@cs.nyu.edu}{dewei.chen@cs.nyu.edu} \\ \phone \space 408-470-8116 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{New York University}
+
+\descript{M.S. Computer Science}
+\location{Courant Institute of \\ Mathematical Sciences}
+Graduated in Dec 2015
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\subsection{UC San Diego}
+
+\descript{B.S. Mechanical Engineering}
+\location{Jacobs School of Engineering}
+Graduated Cum Laude in Jun 2009
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+\subsection{Programming}
+Node.js \textbullet{} 
+Go \textbullet{}
+Python \\
+Java \textbullet{}  
+C \textbullet{}
+Objective-C \\
+PHP \textbullet{}
+SQL \textbullet{}
+Matlab
+\sectionspace
+\subsection{Frameworks}
+Express.js \textbullet{}
+Hapi.js \\
+React.js \textbullet{}
+Angular.js \\
+Django \textbullet{}
+Hadoop
+\sectionspace
+\subsection{Storage}
+PostgreSQL \textbullet{}
+Redis \\
+MongoDB
+\sectionspace
+\subsection{Tools}
+JIRA \textbullet{}
+Confluence \\
+Git \textbullet{}
+Docker \textbullet{}
+AWS \\
+Linux \textbullet{}
+Bash \textbullet{} 
+JMeter \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Links
+%------------------------------------------------
+
+\section{Links} 
+
+Website: \href{https://mutaphore.github.io}{\bf https://mutaphore.github.io} \\
+Github: \href{https://github.com/mutaphore}{\bf https://github.com/mutaphore} \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+\subsection{Graduate}
+
+Algorithms and Data Structures \\
+Distributed Systems \\
+Machine Learning \\
+Realtime Big Data Analytics \\
+Advanced Operating Systems \\
+Programming Languages \\
+Discrete Mathematics
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Interests
+%------------------------------------------------
+
+\section{Interests}
+Distributed Systems \\
+Cryptocurrencies \\
+Machine Learning
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Experience}
+
+\runsubsection{Codiscope}
+\descript{| Senior Software Engineer}
+\location{Jan 2016 – Present | Boston, MA}
+\textit{Codiscope (now acquired by Synopsys) builds cloud-based tools to analyze Java and JavaScript source code for security vulnerabilities. I'm the 5th engineer to join the company and my work is focused on developing our core Nodejs backend microservices.}
+\vspace{3.5mm} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Lead the agile development of new product features and improvements: technical design, proof-of-concept, implementation, testing and deployment.
+\item Develop core backend services in the areas of identity access management, database drivers, repository manager, admin portal and Salesforce integration.
+\item Designed and implemented new registration system that reduced user sign-up friction and doubled user registration conversion rate.
+\item Developed scripts to help migrate and re-map all existing customer data from Zendesk to Salesforce (50,000+ records).
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Empirasign Strategies}
+\descript{| Software Engineering Intern}
+\location{Oct 2014 – Oct 2015 | New York, NY}
+\textit{Empirasign is a market data company that collects and supplies bond trading data from major banks in the U.S. and Europe. As an intern I put on many hats and have worked on development projects in both front and backend.}
+\vspace{0.75mm}
+\begin{tightitemize}
+\item Wrote Python programs to efficiently parse realtime bond trading data from emails, files and websites. Improved email search algorithm speed by 20\%.
+\item Developed client and server side code for an anonymous trade chat system.
+\item Developed backend APIs and custom tools to integrate with Google Analytics, Salesforce, Mail Chimp, Twilio and Pubnub.
+\item Enhanced and tested website user interface and Django backend APIs.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Mentor Edata}
+\descript{| Mobile Application Developer}
+\location{Nov 2013 – Aug 2014 | San Luis Obispo, CA}
+\textit{Mentor Edata created the DrivingBuddy app that collects GPS and car ECU data to generate a score and provide feedback to help drivers understand their driving skills. My focus was on developing the iOS mobile app.}
+\vspace{0.75mm}
+\begin{tightitemize}
+\item Successfully released three production versions of app to the Apple iTunes store and many beta test versions to testers.
+\item Developed code to collect real-time car engine data by reading the ECU and upload to server for score analysis.
+\item Developed an Objective-C static library that provides an API for integration with third party data providers.
+\item Improved overall app UI responsiveness by adding multi-threading logic to server side code and database queries.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Projects
+%------------------------------------------------
+
+\section{Open Source Projects}
+\runsubsection{Container Dispatcher}
+\descript{Go, Docker}
+\location{\href{https://github.com/mutaphore/docker-dispatch}{https://github.com/mutaphore/docker-dispatch}}
+A dispatching service that creates docker containers from RabbitMQ messages. Communicates with Docker daemon using the RESTful remote API.
+
+\sectionspace % Some whitespace after the section
+
+\runsubsection{Streaming Video Server}
+\descript{Java}
+\location{\href{https://github.com/mutaphore/RTSP-Client-Server}{https://github.com/mutaphore/RTSP-Client-Server}}
+Implementation of a streaming video server and client that communicate using the Real-Time Streaming Protocol (RTSP) and send data using the Realtime Transfer Protocol (RTP).
+
+\sectionspace % Some whitespace after the section
+
+%\runsubsection{Social news analytics}
+%\descript{Java, Hadoop}
+%\location{\href{https://github.com/mutaphore/social-news-bigdata}{https://github.com/mutaphore/social-news-bigdata}}
+%Collect 500GB worth of data from social news sites HackerNews and Reddit and use Hadoop Hive and MapReduce to correlate actual website content with number of upvotes received.
+%\sectionspace % Some whitespace after the section
+
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
