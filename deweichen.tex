@@ -73,38 +73,34 @@ Graduated Cum Laude in Jun 2009
 
 \section{Skills}
 \subsection{Programming}
-Node.js \textbullet{} 
-Go \textbullet{}
-Python \\
-Java \textbullet{}  
-C \textbullet{}
-Objective-C \\
-PHP \textbullet{}
-SQL \textbullet{}
-Matlab
+Node \textbullet{}
+TypeScript \textbullet{} 
+Go \\
+Python \textbullet{}
+Ruby \textbullet{}  
+C
 \sectionspace
-\subsection{Frameworks}
+\subsection{Frontend}
+React \textbullet{}
+Angular
+\sectionspace
+\subsection{Backend}
+Nginx \textbullet{}
 Express.js \textbullet{}
-Hapi.js \\
-React.js \textbullet{}
-Angular.js \\
-Django \textbullet{}
-Hadoop
+Koa.js \\
+Django \textbullet
+RabbitMQ
 \sectionspace
-\subsection{Storage}
+\subsection{Database}
 PostgreSQL \textbullet{}
 Redis \\
 MongoDB
 \sectionspace
-\subsection{Tools}
-JIRA \textbullet{}
-Confluence \\
-Git \textbullet{}
+\subsection{DevOps}
 Docker \textbullet{}
 AWS \\
-Linux \textbullet{}
-Bash \textbullet{} 
-JMeter \\
+Ansible \textbullet{}
+Terraform
 
 \sectionspace % Some whitespace after the section
 
@@ -165,16 +161,32 @@ Machine Learning
 
 \section{Experience}
 
-\runsubsection{Codiscope}
-\descript{| Senior Software Engineer}
-\location{Jan 2016 – Present | Boston, MA}
-\textit{Codiscope (now acquired by Synopsys) builds cloud-based tools to analyze Java and JavaScript source code for security vulnerabilities. I'm the 5th engineer to join the company and my work is focused on developing our core Nodejs backend microservices.}
-\vspace{3.5mm} % Hacky fix for awkward extra vertical space
+\runsubsection{Second Spectrum}
+\descript{| Software Engineer}
+\location{Mar 2017 – Present | Los Angeles, CA}
+\textit{Second Spectrum is the official optical tracking provider of the NBA and collects player data to enhance the game viewing experience through machine intelligence. I'm on the infrastructure team responsible for building and scaling out our live video delivery pipeline.}
+\vspace{3.5mm}
 \begin{tightitemize}
-\item Lead the agile development of new product features and improvements: technical design, proof-of-concept, implementation, testing and deployment.
-\item Develop core backend services in the areas of identity access management, database drivers, repository manager, admin portal and Salesforce integration.
+\item Design and develop highly available services to ingest live video feeds from physical encoders and deliver to CDN origin and client players.
+\item Build, monitor and scale infrastructure on AWS: networking, DNS, load balancers, S3, SQS and lambdas.
+\item Build and improve internal DevOps tooling for automating CI/CD processes.
+\item Video streaming R\&D on DRM encryption and player prototyping.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{Synopsys (Codiscope)}
+\descript{| Software Engineer}
+\location{Jan 2016 – Mar 2017 | Boston, MA}
+\textit{Codiscope (acquired by Synopsys) builds cloud-based tools to analyze Java and JavaScript source code for security vulnerabilities from the OWASP top 10. I was the 5th engineer on the team with focus on developing our core Nodejs backend microservices.}
+\vspace{1.0mm} % Hacky fix for awkward extra vertical space
+\begin{tightitemize}
+\item Led the agile development of new product features and improvements: technical design, proof-of-concept, implementation, testing and deployment.
+\item Developed core backend services/APIs for data access, identity access management, repository management and third party integrations.
 \item Designed and implemented new registration system that reduced user sign-up friction and doubled user registration conversion rate.
-\item Developed scripts to help migrate and re-map all existing customer data from Zendesk to Salesforce (50,000+ records).
+\item Developed scripts to migrate and sync all existing customer data from Zendesk to Salesforce (50,000+ unique users).
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -184,29 +196,13 @@ Machine Learning
 \runsubsection{Empirasign Strategies}
 \descript{| Software Engineering Intern}
 \location{Oct 2014 – Oct 2015 | New York, NY}
-\textit{Empirasign is a market data company that collects and supplies bond trading data from major banks in the U.S. and Europe. As an intern I put on many hats and have worked on development projects in both front and backend.}
+\textit{Empirasign is a market data company that collects and supplies bond trading data from major banks in the U.S. and Europe. I worked on front and backend development projects.}
 \vspace{0.75mm}
 \begin{tightitemize}
-\item Wrote Python programs to efficiently parse realtime bond trading data from emails, files and websites. Improved email search algorithm speed by 20\%.
-\item Developed client and server side code for an anonymous trade chat system.
+\item Developed Python programs to efficiently parse realtime bond trading data from emails, files and websites. Improved email search algorithm speed by 20\%.
+\item Wrote client and server side code for an anonymous trade chat system.
 \item Developed backend APIs and custom tools to integrate with Google Analytics, Salesforce, Mail Chimp, Twilio and Pubnub.
-\item Enhanced and tested website user interface and Django backend APIs.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{Mentor Edata}
-\descript{| Mobile Application Developer}
-\location{Nov 2013 – Aug 2014 | San Luis Obispo, CA}
-\textit{Mentor Edata created the DrivingBuddy app that collects GPS and car ECU data to generate a score and provide feedback to help drivers understand their driving skills. My focus was on developing the iOS mobile app.}
-\vspace{0.75mm}
-\begin{tightitemize}
-\item Successfully released three production versions of app to the Apple iTunes store and many beta test versions to testers.
-\item Developed code to collect real-time car engine data by reading the ECU and upload to server for score analysis.
-\item Developed an Objective-C static library that provides an API for integration with third party data providers.
-\item Improved overall app UI responsiveness by adding multi-threading logic to server side code and database queries.
+\item Tested and enhanced website user interface and Django backend APIs.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -215,20 +211,19 @@ Machine Learning
 % Projects
 %------------------------------------------------
 
-\section{Open Source Projects}
+\section{Open Source}
+
+\runsubsection{RTSP Client Server}
+\descript{Java}
+\location{\href{https://github.com/mutaphore/RTSP-Client-Server}{https://github.com/mutaphore/RTSP-Client-Server}}
+Implementation of a video streaming server and client that communicate using the Real-Time Streaming Protocol (RTSP) and Realtime Transfer Protocol (RTP).
+
+\sectionspace % Some whitespace after the section
+
 \runsubsection{Container Dispatcher}
 \descript{Go, Docker}
 \location{\href{https://github.com/mutaphore/docker-dispatch}{https://github.com/mutaphore/docker-dispatch}}
 A dispatching service that creates docker containers from RabbitMQ messages. Communicates with Docker daemon using the RESTful remote API.
-
-\sectionspace % Some whitespace after the section
-
-\runsubsection{Streaming Video Server}
-\descript{Java}
-\location{\href{https://github.com/mutaphore/RTSP-Client-Server}{https://github.com/mutaphore/RTSP-Client-Server}}
-Implementation of a streaming video server and client that communicate using the Real-Time Streaming Protocol (RTSP) and send data using the Realtime Transfer Protocol (RTP).
-
-\sectionspace % Some whitespace after the section
 
 %\runsubsection{Social news analytics}
 %\descript{Java, Hadoop}
