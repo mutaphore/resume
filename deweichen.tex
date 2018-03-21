@@ -52,7 +52,6 @@
 \subsection{New York University}
 
 \descript{M.S. Computer Science}
-\location{Courant Institute of \\ Mathematical Sciences}
 Graduated in Dec 2015
 
 \sectionspace % Some whitespace after the section
@@ -62,7 +61,6 @@ Graduated in Dec 2015
 \subsection{UC San Diego}
 
 \descript{B.S. Mechanical Engineering}
-\location{Jacobs School of Engineering}
 Graduated Cum Laude in Jun 2009
 
 \sectionspace % Some whitespace after the section
@@ -74,8 +72,7 @@ Graduated Cum Laude in Jun 2009
 \section{Skills}
 \subsection{Programming}
 Node \textbullet{}
-TypeScript \textbullet{} 
-Go \\
+Golang \\
 Python \textbullet{}
 Ruby \textbullet{}  
 C
@@ -94,7 +91,9 @@ RabbitMQ
 \subsection{Database}
 PostgreSQL \textbullet{}
 Redis \\
+Elasticsearch \textbullet{}
 MongoDB
+
 \sectionspace
 \subsection{DevOps}
 Docker \textbullet{}
@@ -110,7 +109,7 @@ Terraform
 
 \section{Links} 
 
-Website: \href{https://mutaphore.github.io}{\bf https://mutaphore.github.io} \\
+Website: \\ \href{https://mutaphore.github.io}{\bf https://mutaphore.github.io} \\
 Github: \href{https://github.com/mutaphore}{\bf https://github.com/mutaphore} \\
 
 \sectionspace % Some whitespace after the section
@@ -121,12 +120,11 @@ Github: \href{https://github.com/mutaphore}{\bf https://github.com/mutaphore} \\
 
 \section{Coursework}
 
-\subsection{Graduate}
+\subsection{Graduate Level}
 
 Algorithms and Data Structures \\
 Distributed Systems \\
 Machine Learning \\
-Realtime Big Data Analytics \\
 Advanced Operating Systems \\
 Programming Languages \\
 Discrete Mathematics
@@ -139,8 +137,8 @@ Discrete Mathematics
 
 \section{Interests}
 Distributed Systems \\
-Cryptocurrencies \\
-Machine Learning
+Machine Learning \\
+Cryptocurrencies
 
 \sectionspace % Some whitespace after the section
 
@@ -163,14 +161,14 @@ Machine Learning
 
 \runsubsection{Second Spectrum}
 \descript{| Software Engineer}
-\location{Mar 2017 – Present | Los Angeles, CA}
-\textit{Second Spectrum is the official optical tracking provider of the NBA and collects player data to enhance the game viewing experience through machine intelligence. I'm on the infrastructure team responsible for building and scaling out our live video delivery pipeline.}
+\location{Mar 2017 – Present at Los Angeles, CA}
+\textit{Second Spectrum is the official optical tracking provider of the NBA and uses machine intelligence to enhance the game viewing experience. I was responsible for building and scaling out our live video streaming pipeline.}
 \vspace{3.5mm}
 \begin{tightitemize}
-\item Design and develop highly available services to ingest live video feeds from physical encoders and deliver to CDN origin and client players.
-\item Build, monitor and scale infrastructure on AWS: networking, DNS, load balancers, S3, SQS and lambdas.
-\item Build and improve internal DevOps tooling for automating CI/CD processes.
-\item Video streaming R\&D on DRM encryption and player prototyping.
+\item Design and develop highly available services to ingest live video feeds from encoders and deliver to client players on the web, iOS and Android.
+\item Build, monitor and scale infrastructure on AWS using Terraform: CDN, networking, DNS, load balancers, S3, SQS and lambda functions.
+\item Build internal DevOps tooling for automating CI/CD processes.
+\item Improve end to end latency of video streaming pipeline.
 \end{tightitemize}
 
 \sectionspace % Some whitespace after the section
@@ -179,7 +177,7 @@ Machine Learning
 
 \runsubsection{Synopsys (Codiscope)}
 \descript{| Software Engineer}
-\location{Jan 2016 – Mar 2017 | Boston, MA}
+\location{Jan 2016 – Mar 2017 at Boston, MA}
 \textit{Codiscope (acquired by Synopsys) builds cloud-based tools to analyze Java and JavaScript source code for security vulnerabilities from the OWASP top 10. I was the 5th engineer on the team with focus on developing our core Nodejs backend microservices.}
 \vspace{1.0mm} % Hacky fix for awkward extra vertical space
 \begin{tightitemize}
@@ -195,8 +193,8 @@ Machine Learning
 
 \runsubsection{Empirasign Strategies}
 \descript{| Software Engineering Intern}
-\location{Oct 2014 – Oct 2015 | New York, NY}
-\textit{Empirasign is a market data company that collects and supplies bond trading data from major banks in the U.S. and Europe. I worked on front and backend development projects.}
+\location{Oct 2014 – Oct 2015 at New York, NY}
+\textit{Empirasign is a market data company that collects and supplies bond trading data from major banks in the U.S. and Europe. I worked on both front and backend projects.}
 \vspace{0.75mm}
 \begin{tightitemize}
 \item Developed Python programs to efficiently parse realtime bond trading data from emails, files and websites. Improved email search algorithm speed by 20\%.
@@ -220,10 +218,11 @@ Implementation of a video streaming server and client that communicate using the
 
 \sectionspace % Some whitespace after the section
 
-\runsubsection{Container Dispatcher}
-\descript{Go, Docker}
-\location{\href{https://github.com/mutaphore/docker-dispatch}{https://github.com/mutaphore/docker-dispatch}}
-A dispatching service that creates docker containers from RabbitMQ messages. Communicates with Docker daemon using the RESTful remote API.
+\runsubsection{Image Compression}
+\descript{Python}
+\location{\href{https://github.com/mutaphore/svd-image-compression}{https://github.com/mutaphore/svd-image-compression}}
+Compress an image by calculating the singular value decomposition (SVD) of the image matrix and optimize for compressed image quality using SSIM.
+
 
 %\runsubsection{Social news analytics}
 %\descript{Java, Hadoop}
